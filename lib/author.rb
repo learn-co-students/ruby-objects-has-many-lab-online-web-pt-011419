@@ -18,4 +18,8 @@ class Author
     title.author = self
     @posts << title
   end
+
+  def self.post_count
+    Post.all.length
+  end
 end
